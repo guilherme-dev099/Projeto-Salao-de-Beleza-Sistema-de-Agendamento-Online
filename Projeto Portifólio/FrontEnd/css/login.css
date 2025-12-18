@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+label, a {
+  line-height: normal;
+}
+body{
+    height: 100vh;
+    background: #f6eef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 90%;
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.left{
+    background-image: url(src/mulher.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay{
+position: absolute;
+  inset: 0;
+  background: #b76cff;
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+}
+
+.text{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+}
+
+.text h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.right h1{
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.right p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.toggle-container{
+    background-color: #d7d7d748;
+    display: flex;
+    border-radius: 50px;
+    max-width: 800px;
+    padding: 6px;
+    width: 100%  
+}
+
+.toggle-btn{
+    flex: 1;
+    padding: 10px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 40px;
+}
+
+.toggle-btn.active{
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction:column ;
+
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;               
+    padding: 0;
+    white-space: nowrap;
+}
+.remember input{
+  margin: 0;              
+}
+.forgot{
+margin: 0;
+  padding: 0;
+  line-height: normal;
+  white-space: nowrap;
+    font-size: 15px;
+    text-decoration: none;
+    color: #cb6eac;
+}
+label{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+input{
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary{
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(90deg, #fa56a8 0%, #B682FF 100%);
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15); 
+  cursor: pointer;
+}
+.btn-secundary{
+    
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    color: black;
+    font-size: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.btn-secundary:hover{
+    background-color: #fec712;
+    color: white;
+}
+
+.btn-register{
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(90deg, #fa56a8 0%, #B682FF 100%);
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.btn-register:hover {
+  filter: brightness(1.15); 
+  cursor: pointer;
+}

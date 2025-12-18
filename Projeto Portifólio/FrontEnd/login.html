@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Beleza ao seu alcance</h2>
+            <p>Agende seus serviços favoritos com facilidade</p>
+        </div>
+    </div>
+    <div class="right">
+        <h1>Bem-vinda!</h1>
+        <p>Entre na sua conta ou crie uma nova</p>
+        <div class="toggle-container">
+            <button class="toggle-btn" data-tab="login">Login</button>
+            <button class="toggle-btn" data-tab="cadastro">Cadastrar</button>
+        </div>
+        <div id="login" class="form">
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="seu@email.com">
+                <label>Senha</label>
+                <input type="senha" placeholder="••••••••">
+                <div class="options">
+                <label class="remember">
+                <input type="checkbox">
+                Lembrar de mim
+                </label>
+                <a href="#" class="forgot">Esqueci a senha </a>
+        </div>
+            <button class="btn-primary">Entrar como cliente</button>
+            <button class="btn-secundary">Entrar como profissional</button>
+        </form>
+        </div>
+        
+    
+    <div id="cadastro" class="form hidden">
+        <form>
+        <label>Nome Completo</label>
+        <input type="text" placeholder="Seu nome">
+        <label>Email</label>
+        <input type="email" placeholder="seu@email.com">
+        <label>Telefone</label>
+        <input type="tel" placeholder="(00) 00000-0000">
+        <label>Senha</label>
+        <input type="password" placeholder="••••••••">
+        <button class="btn-register">Criar conta</button>
+        </form>
+        </div>
+    </div>
+</div>
+<script src="js/pages/login.js"></script>
+</body>
+</html>
