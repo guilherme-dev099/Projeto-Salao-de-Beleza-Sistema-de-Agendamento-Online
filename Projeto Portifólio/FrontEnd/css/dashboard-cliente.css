@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff7f2;
+  color: #333;
+  padding-bottom: 40px;
+}
+
+.header {
+  background: linear-gradient(135deg, #ff6bbd 0%, #a56cff 100%);
+  padding: 30px 20px 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.topo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.topo p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.icones {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-icone {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icone svg {
+  stroke: white;
+}
+
+.btn-icone:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.botoes-header {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-rosa,
+.btn-roxo {
+  flex: 1;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-rosa svg,
+.btn-roxo svg {
+  stroke: white;
+}
+
+.btn-rosa {
+  background: linear-gradient(135deg, #ff6bbd 0%, #ff8dd0 100%);
+}
+
+.btn-roxo {
+  background: linear-gradient(135deg, #a56cff 0%, #c18fff 100%);
+}
+
+.btn-rosa:hover,
+.btn-roxo:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.card-promocao {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe6f0 100%);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icone-promo {
+  width: 50px;
+  height: 50px;
+  background: #ffd700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icone-promo svg {
+  stroke: white;
+}
+
+.texto-promo {
+  flex: 1;
+}
+
+.texto-promo h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.texto-promo p {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-ver-mais {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff6bbd 0%, #a56cff 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-ver-mais:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(165, 108, 255, 0.3);
+}
+
+.agendamentos {
+  margin-top: 10px;
+}
+
+.titulo-agendamentos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.titulo-agendamentos h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.titulo-agendamentos a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.titulo-agendamentos a:hover {
+  color: #a56cff;
+}
+
+.card-agendamento {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icone-calendario {
+  width: 50px;
+  height: 50px;
+  background: #a56cff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icone-calendario svg {
+  stroke: white;
+}
+
+.info-agendamento {
+  flex: 1;
+}
+
+.info-agendamento h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.info-agendamento .profissional {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.data-hora {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.data-hora .data,
+.data-hora .hora {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.data-hora svg {
+  stroke: #666;
+  flex-shrink: 0;
+}
+
+.status {
+  background: #c8e6c9;
+  color: #2e7d32;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
